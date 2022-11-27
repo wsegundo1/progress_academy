@@ -1,0 +1,494 @@
+:root{
+
+    --cor_principal: #168695;
+    --btm_compra: #17AE38;
+    --btm_remover: #FF5959;
+    --btm_carrinho: #A259FF;
+    --fundos: #D9D9D9;
+    --preco: #DFB513;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* INICIO NAV */
+
+.nav{
+    background-color: var(--cor_principal);
+    height: 100px;
+    display: flex;
+}
+.logo-nav{
+    display: flex;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.menu{
+    list-style: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.menu li{
+    position: relative;
+    float: left;
+    list-style: none;
+
+}
+
+.menu li ul{
+    position: absolute;
+    top: 25px;
+    left: -30px;
+    width: 160px;
+    background-color: var(--cor_principal);
+    display: none;
+    box-shadow: -6px 6px 6px -3px rgba(0,0,0,0.51);
+    z-index: 1;
+}
+
+#primeiro{
+    margin-top: 15px;
+}
+
+.drop{
+    margin-bottom: 10px;
+}
+
+.menu li:hover ul, .menuli.over ul{
+    display: block;
+}
+
+.linha{
+    border: solid 1px white;
+    height: 60px;
+    margin: 0 30px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.itens_direita{
+    display: flex;
+    align-items: center;
+    margin-left: 630px;
+
+
+}
+
+.itens_direita a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.form input{
+    background-color: var(--cor_principal);
+    border: solid white 3px;
+    border-radius: 10px;
+    padding: 10px ;
+    padding-right: 100px;
+    
+}
+
+input::placeholder{
+    color: white;
+}
+
+.carrinho{
+    display: flex;
+    margin-left: 20px;
+    color: white;
+    font-weight: 500;
+    border: solid 3px white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.carrinho p{
+    margin-left: 10px;
+    text-align: justify;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 18px;
+}
+
+.login{
+    margin-left: 20px;
+}
+
+/* FIM NAV */
+
+/* INICIO REDES SOCIAIS HEADER */
+
+.redes_header{
+    position: absolute;
+    left: 45%;
+    background-color: var(--cor_principal);
+    width: 208px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 1;
+
+}
+
+.redes_header img:last-child{
+    margin-left: 8px;
+}
+
+/* FIM REDES SOCIAIS HEADER */
+
+/* INICIO DADOS */
+
+.dados{
+    background-color: var(--fundos);
+    width: 900px;
+    height: 620px;
+    margin-top: 100px;
+}
+
+.dados h3{
+    text-align: center;
+    padding-top: 50px;
+    color: var(--cor_principal);
+}
+
+
+select{
+    color: var(--cor_principal);
+    width: 295px;
+}
+
+.dados select{
+    height: 40px;
+    background-color: var(--fundos);
+    border: solid 2px var(--cor_principal);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.dados option{
+    color: var(--cor_principal);
+    font-weight: 500;
+}
+
+.dados input{
+    height: 40px;
+    background-color: var(--fundos);
+    border: solid 2px var(--cor_principal);
+    border-radius: 10px;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+.dados input::placeholder{
+    color: var(--cor_principal);
+    
+}
+
+.form_dados{
+    text-align: center;
+}
+
+.nome_completo{
+    width: 600px;
+}
+
+.cpf_email input{
+    width: 297px;
+}
+
+.estado_cidade input{
+    width: 297px;
+}
+
+.cep_bairro input{
+    width: 297px;
+    margin-bottom: 50px;
+}
+
+.cadastrar_btm{
+    background-color: var(--cor_principal);
+    color: white;
+    font-weight: 500;
+    width: 250px;
+    height: 40px;
+
+    box-shadow: -5px 5px 13px -6px rgba(0,0,0,0.75);
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+/* FIM DADOS */
+
+/* INICIO TOTAL */
+
+.form_finalizacao{
+    display: flex;
+    justify-content: center;
+}
+
+.total{
+    width: 400px;
+    margin: 100px;
+    color: var(--cor_principal);
+}
+
+.bg_total{
+    background-color: var(--fundos);
+}
+
+.total h3{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.total h4{
+    margin-left: 10px;
+}
+
+.fig_txt{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    font-size: 14px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.fig_valor{
+    margin-left: 30px;
+}
+
+.linha_total{
+    border: solid 1px var(--cor_principal);
+    width: 350px;
+    margin: 30px auto;
+}
+
+.total_compra{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.total_compra p {
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.total_compra span {
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+/* FIM TOTAL */
+
+/* INICIO PAGAMENTO */
+
+.pagamento{
+    background-color: var(--fundos);
+    color: var(--cor_principal);
+    width: 400px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagamento h3{
+    margin-top: 20px;
+}
+
+.forma_pagamento{
+    margin-top: 5px;
+}
+
+.forma_pagamento-btm{
+    width: 250px;
+    height: 40px;
+    margin: 20px 0;
+    background-color: var(--btm_compra);
+    box-shadow: -5px 5px 13px -6px rgba(0,0,0,0.75);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+/* FIM PAGAMENTO */
+
+/* INICIO FOOTER */
+
+.footer{
+    background-color: var(--cor_principal);
+    color: white;
+    text-align: center;
+}
+
+.footer p, span{
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.redes_footer a img{
+    width: 40px;
+}
+
+.copy{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+/* FIM FOOTER */
+
+@media screen and (max-width: 1366px){
+    /* NAV */
+    .nav{
+        background-color: var(--cor_principal);
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .menu{
+        list-style: none;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        
+    }
+    
+    .itens_direita{
+        align-items: center;
+        margin-left: 50px;
+    }
+    /* FIM NAV */
+
+    /* INICIO PEDIDO */
+
+    .form_finalizacao{
+        display: flex;
+        justify-content: center;
+        margin-left: 80px;
+    }
+    
+     /* FIM PEDIDO */
+    
+}
+
+@media screen and (min-width: 429px){
+
+    .sidenav{
+        display: none;
+    }
+
+   .btm-sidenav{
+    display: none;
+   }
+
+}
+
+
+@media screen and (max-width: 428px){
+    body{
+         background-image: url(../img/LOGO\ MOBILE.png);
+         background-repeat: no-repeat;
+         background-size: 300px;
+         background-position: 70px 0px;
+    }
+    
+     header{
+         display: none;
+     }
+ 
+     .form_finalizacao{
+        display: block;
+        margin-left: 10px;
+    }
+
+    .dados{
+        background-color: var(--fundos);
+        width: 400px;
+        height: 620px;
+        margin-top: 150px;
+    }
+
+    .nome_completo{
+        width: 297px;
+    }
+
+    #CEP{
+        margin: 10px 0;
+    }
+
+    .total{
+        margin: 10px 0;
+    }
+ 
+     /* MENU LATERAL */
+     .sidenav {
+         height: 100%;
+         width: 0;
+         position: fixed; 
+         z-index: 9999;
+         top: 0;
+         left: 0;
+         background-color: var(--cor_principal);
+         overflow-x: hidden;
+         padding-top: 60px;
+         transition: 0.5s;
+       }
+       
+       .sidenav a {
+         padding: 8px 8px 8px 32px;
+         text-decoration: none;
+         font-size: 25px;
+         color: white;
+         display: block;
+         transition: 0.3s;
+       }
+       
+       .sidenav a:hover {
+         color: white;
+       }
+       
+       .sidenav .closebtn {
+         position: absolute;
+         top: 0;
+         right: 25px;
+         font-size: 36px;
+         margin-left: 50px;
+       }
+       
+ 
+ }

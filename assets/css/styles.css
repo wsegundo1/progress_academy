@@ -1,0 +1,577 @@
+:root{
+
+    --cor_principal: #168695;
+    --btm_compra: #17AE38;
+    --btm_remover: #FF5959;
+    --btm_carrinho: #A259FF;
+    --fundos: #D9D9D9;
+    --preco: #DFB513;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* INICIO NAV */
+
+.nav{
+    background-color: var(--cor_principal);
+    height: 100px;
+    display: flex;
+}
+.logo-nav{
+    display: flex;
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.menu{
+    list-style: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.menu li{
+    position: relative;
+    float: left;
+    list-style: none;
+
+}
+
+.menu li ul{
+    position: absolute;
+    top: 25px;
+    left: -30px;
+    width: 160px;
+    background-color: var(--cor_principal);
+    display: none;
+    box-shadow: -6px 6px 6px -3px rgba(0,0,0,0.51);
+    z-index: 1;
+}
+
+#primeiro{
+    margin-top: 15px;
+}
+
+.drop{
+    margin-bottom: 10px;
+}
+
+.menu li:hover ul, .menuli.over ul{
+    display: block;
+}
+
+.linha{
+    border: solid 1px white;
+    height: 60px;
+    margin: 0 30px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.itens_direita{
+    display: flex;
+    align-items: center;
+    margin-left: 630px;
+
+
+}
+
+.itens_direita a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.form input{
+    background-color: var(--cor_principal);
+    border: solid white 3px;
+    border-radius: 10px;
+    padding: 10px ;
+    padding-right: 100px;   
+}
+
+input::placeholder{
+    color: white;
+}
+
+.carrinho{
+    display: flex;
+    margin-left: 20px;
+    color: white;
+    font-weight: 500;
+    border: solid 3px white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.carrinho p{
+    margin-left: 10px;
+    text-align: justify;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 18px;
+}
+
+.login{
+    margin-left: 20px;
+}
+
+/* FIM NAV */
+
+/* INICIO REDES SOCIAIS HEADER */
+
+.redes_header{
+    position: absolute;
+    left: 45%;
+    background-color: var(--cor_principal);
+    width: 208px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 1;
+
+}
+
+.redes_header img:last-child{
+    margin-left: 8px;
+}
+
+/* FIM REDES SOCIAIS HEADER */
+
+/* INICIO CATEGORIAS */
+
+.categorias{
+    max-width: 1200px;
+    margin: 50px auto;
+    
+}
+
+.h1{
+    text-align: center;
+    color: var(--cor_principal);
+}
+
+.cards_categoria{
+    display: flex;
+    justify-content: center;
+}
+
+.cards_categoria a{
+    text-decoration: none;
+    color: #464646;
+}
+
+
+.cards{
+    margin-top: 30px;
+    height: 180px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: -2px 4px 7px 1px rgba(0,0,0,0.32);
+    margin-left: 30px;
+
+    display: flex;
+    
+
+}
+
+.conteudo_cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cards img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.cards p{
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.cards span{
+    font-size: 12px;
+}
+
+
+/* FIM CATEGORIAS */
+
+
+/* INICIO CARDS CURSOS */
+
+.cards_cursos{
+    position: relative;  
+    height: 450px;
+    width: 1075px;
+    align-items: center;
+    margin: 200px auto;
+    margin-top: 100px;
+  }
+  
+.titulo_cursos{
+  color: var(--cor_principal);
+}
+
+  .swiper{
+    width: 950px;
+  }
+  
+  .card-conteudo{
+    background-color: var(--cor_principal);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+  }
+  
+
+  .curso-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  } 
+  
+  .curso-txt .curso-nome{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .curso-txt .curso-obs{
+    font-size:12px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+  }
+
+  .preco{
+    margin: 15px 0;
+    color: var(--preco);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .curso-btm{
+    width: 250px;
+    height: 50px;
+    background-color: var(--cor_principal);
+    border: solid 2px white;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .swiper-pagination{
+    position: absolute;
+  }
+  
+  .swiper-pagination-bullet{
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: var(--btm_carrinho);
+  }
+  
+  .swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: var(--btm_carrinho);
+    transition: all 0.3s ease;
+  }
+  .swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: var(--btm_carrinho);
+  }
+
+/* FIM CARDS CURSOS */
+
+
+
+/* INICIO DASH */
+
+.dash{
+    max-width: 800px;
+    margin: 50px auto;
+    background: linear-gradient(180deg, rgba(22,134,149,1) 0%, rgba(26,192,153,1) 100%);
+    border-radius: 20px;
+    height: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.conteudo_dash img{
+    width: 50px;
+}
+
+h2{
+    margin: 0 0 0 0;
+}
+
+.conteudo_dash{
+    margin-left: 30px;
+    color: white;
+    text-align: center;
+    margin-left: 60px;
+}
+
+.conteudo_dash p{
+    margin-bottom: 3px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.conteudo_dash:first-child{
+    margin-left: 0;
+}
+
+.btm_dash{
+    height: 50px;
+    width: 200px;
+    margin-left: 40px;
+    background-color: var(--btm_compra);
+    color: white;
+    border: solid 2px white;
+    border-radius: 5px;
+}
+
+/* FIM DASH */
+
+
+/* INICIO TUTORIAL ONLINE */
+
+.tutorial{
+    display: flex;
+    max-width: 700px;
+    margin: 100px auto;
+}
+
+.txt{
+    margin-right: 40px;
+    color: #464646;
+}
+
+.titulo_txt{
+    color: var(--cor_principal);
+}
+
+/* FIM TUTORIAL ONLINE */
+
+/* INICIO FOOTER */
+
+.footer{
+    background-color: var(--cor_principal);
+    color: white;
+    text-align: center;
+}
+
+.footer p, span{
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.redes_footer a img{
+    width: 40px;
+}
+
+.copy{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+
+/* FIM FOOTER */
+
+
+/* MEDIAS */
+
+
+/* NOTEBOOK 1366px */
+
+@media screen and (max-width: 1366px){
+    /* NAV */
+    .nav{
+        background-color: var(--cor_principal);
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .itens_direita{
+        align-items: center;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 429px){
+    .cards_curso-mobile{
+        display: none;
+    }
+
+    .dash_mobile{
+        display: none;
+    }
+
+    .sidenav{
+        display: none;
+    }
+
+   .btm-sidenav{
+    display: none;
+   }
+
+}
+
+@media screen and (max-width: 428px){
+   body{
+        background-image: url(../img/LOGO\ MOBILE.png);
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position: 70px 0px;
+   }
+   
+    header{
+        display: none;
+    }
+
+    .categorias{
+        display: none;
+    }
+
+    .cards_cursos{
+       display: none;
+      }
+
+      .cards_curso-mobile{
+        margin-top: 200px;
+        margin: 50px 50px;
+      }
+
+      .cards_curso-mobile h2{
+        text-align: center;
+        color: var(--cor_principal);
+        font-weight: 500;
+        margin-bottom: 20px;
+        padding-top: 150px;
+      }
+
+      .cards_curso-mobile a{
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--cor_principal);
+      }
+
+
+      .dash{
+        display: none;
+      }
+
+      .dash_mobile{
+        background: linear-gradient(180deg, rgba(22,134,149,1) 0%, rgba(26,192,153,1) 100%);
+        margin: 0 50px;
+        border-radius: 10px;
+      }
+
+      .conteudo_dash-mobile{
+        text-align: center;
+        margin: 15px 0;
+        padding: 10px 0;
+        color: white;
+      }
+
+      .conteudo_dash-mobile p{
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      .btm_dash-mobile{
+        height: 50px;
+        width: 200px;
+        margin: 10px 65px;
+        background-color: var(--btm_compra);
+        color: white;
+        border: solid 2px white;
+        border-radius: 5px;
+      }
+
+      .tutorial{
+        display: block;
+        max-width: 700px;
+        margin: 50px 50px;
+    }
+
+    .txt{
+        margin-left: 50px;
+        margin-bottom: 40px;
+        color: #464646;
+        text-align: center;
+    }
+
+    /* MENU LATERAL */
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed; 
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        background-color: var(--cor_principal);
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+
+}

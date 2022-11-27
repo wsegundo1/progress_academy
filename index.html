@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Progress Academy</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/icons/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+
+  </head>
+  <body class="body">
+        <!-- ESPAÇO HEADER -->
+    <header class="reader">
+        <nav class="nav">
+            <img class="logo-nav" src="assets/img/LOGO.png" alt="Logo da empresa">
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <div class="linha"></div>
+                <li><a href="#">Categorias <img src="assets/icons/chevron-down.svg" alt="seta"></a>
+                    <ul>
+                        <li class="drop" id="primeiro"><a href="#">Front-end</a></li>
+                        <li class="drop"><a href="#">UI Design</a></li>
+                        <li class="drop"><a href="#">UX Design</a></li>
+                        <li class="drop"><a href="#">Back-end</a></li>
+                        <li class="drop"><a href="#">Edição de Vídeo</a></li>
+                        <li class="drop"><a href="#">Marketing</a></li>
+                    </ul>
+                </li>
+                <div class="linha"></div>
+                <li><a href="pedidos.html">Meus Pedidos</a></li>
+            
+            </ul>
+            <div class="itens_direita">    
+                <form class="form">
+                    <input class="input-nav" type="text" placeholder="Busque pelo seu curso">
+                    <img src="assets/icons/search.svg" alt="lupa">
+                </form>
+
+                <div>
+                    <a class="carrinho" href="carrinho.html">
+                        <img src="assets/icons/cart.svg" alt="carrinho">
+                        <p>Meu <br> Carrinho</p>
+                    </a>
+                    
+                </div>
+
+                <div class="login">
+                    <img src="assets/icons/user-nav.svg" alt="icone de usuário">
+                    <a href="#">Login</a>
+                </div>
+            </div>  
+        </nav>
+
+        <div class="redes_header">
+            <a href="#"><img src="assets/icons/insta.svg" alt="insta"></a>
+            <a href="#"><img src="assets/icons/face.svg" alt="face"></a>
+            <a href="#"><img src="assets/icons/youtube.svg" alt="youtube"></a>
+            
+        </div>
+        
+        <section class="carrossel">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="assets/img/carrossel 1.jpg" class="d-block w-100" alt="imagem 1">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/img/carrossel 2.jpg" class="d-block w-100" alt="imagem 2">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <!-- FIM ESPAÇO HEADER -->
+        </header>
+        <main>    
+        <section class="categorias">
+            <h1 class="h1">Nossa categoria de melhores cursos</h1>
+
+            <div class="cards_categoria">
+                <a class="cards" href="#">
+                    <div class="conteudo_cards">
+                        <img src="assets/icons/image.svg" alt="icone imagem">
+                        <p>UI Design</p>
+                        <span>30 Cursos</span>
+                    </div>
+                </a>
+
+                <a class="cards" href="#">
+                    <div class="conteudo_cards">
+                        <img src="assets/icons/edit.svg" alt="icone imagem">
+                        <p>UX Design</p>
+                        <span>18 Cursos</span>
+                    </div>
+                </a>
+
+                <a class="cards" href="#">
+                    <div class="conteudo_cards">
+                        <img src="assets/icons/cpu.svg" alt="icone imagem">
+                        <p>Programação</p>
+                        <span>20 Cursos</span>
+                    </div>
+                </a>
+
+                <a class="cards" href="#">
+                    <div class="conteudo_cards">
+                        <img src="assets/icons/star.svg" alt="icone imagem">
+                        <p>Marketing</p>
+                        <span>35 Cursos</span>
+                    </div>
+                </a>
+
+                <a class="cards" href="#">
+                    <div class="conteudo_cards">
+                        <img src="assets/icons/box.svg" alt="icone imagem">
+                        <p>Banco de Dados</p>
+                        <span>30 Cursos</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- SIDEBAR -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Inicio</a>
+          <a href="#">Categorias</a>
+          <a href="pedidos.html">Meus Pedidos</a>
+          <a href="carrinho.html">Carrinho</a>
+          <a href="#">Login</a>
+        </div>
+        
+        <span class="btm-sidenav" onclick="openNav()"><img src="assets/icons/menu.svg" alt="icone menu"></span>
+        <!-- FIM SIDEBAR -->
+
+
+        <!-- ESPAÇO CARDS CURSOS -->
+        <section class="cards_cursos">
+          <h3 class="titulo_cursos">Cursos mais vendidos</h3>
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+          
+                  <div class="swiper-slide card">
+                    <div class="card-conteudo">
+
+                      <img src="assets/img/FIG.png" alt="img figma">
+                      
+                      <div class="curso-txt">
+                        <span class="curso-nome">Curso de Figma Básico ao Avançado</span>
+                        <span class="curso-obs">Aprenda a criar interface de <br>
+                          sites e com Figma 
+                          </span>
+                          <span class="preco">R$ 25,00</span>
+                          <a href="TelaCompra.html"><button class="curso-btm">Comprar</button></a>
+                          
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ----------------------------------------------------- -->
+                  <div class="swiper-slide card">
+                    <div class="card-conteudo">
+
+                      <img src="assets/img/PY.png" alt="img figma">
+                      
+                      <div class="curso-txt">
+                        <span class="curso-nome">Curso de Figma Básico ao Avançado</span>
+                        <span class="curso-obs">Aprenda a criar interface de <br>
+                          sites e com Figma 
+                          </span>
+                          <span class="preco">R$ 25,00</span>
+                          <button class="curso-btm">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-conteudo">
+
+                      <img src="assets/img/FRONT.png" alt="img figma">
+                      
+                      <div class="curso-txt">
+                        <span class="curso-nome">Curso de Figma Básico ao Avançado</span>
+                        <span class="curso-obs">Aprenda a criar interface de <br>
+                          sites e com Figma 
+                          </span>
+                          <span class="preco">R$ 25,00</span>
+                          <button class="curso-btm">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-conteudo">
+
+                      <img src="assets/img/PS.png" alt="img figma">
+                      
+                      <div class="curso-txt">
+                        <span class="curso-nome">Curso de Figma Básico ao Avançado</span>
+                        <span class="curso-obs">Aprenda a criar interface de <br>
+                          sites e com Figma 
+                          </span>
+                          <span class="preco">R$ 25,00</span>
+                          <button class="curso-btm">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-conteudo">
+
+                      <img src="assets/img/VUE.png" alt="img figma">
+                      
+                      <div class="curso-txt">
+                        <span class="curso-nome">Curso de Figma Básico ao Avançado</span>
+                        <span class="curso-obs">Aprenda a criar interface de <br>
+                          sites e com Figma 
+                          </span>
+                          <span class="preco">R$ 25,00</span>
+                          <button class="curso-btm">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-conteudo">
+
+                      <img src="assets/img/AE.png" alt="img figma">
+                      
+                      <div class="curso-txt">
+                        <span class="curso-nome">Curso de Figma Básico ao Avançado</span>
+                        <span class="curso-obs">Aprenda a criar interface de <br>
+                          sites e com Figma 
+                          </span>
+                          <span class="preco">R$ 25,00</span>
+                          <button class="curso-btm">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+          
+              <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+        </section>
+
+        <section class="cards_curso-mobile">
+          <h2>Curso em alta</h2>
+          <a href="cursosMobile.html"> ver todos os cursos</a>
+          <div class="card-conteudo">
+
+            <img src="assets/img/FIG.png" alt="img figma">
+            
+            <div class="curso-txt">
+              <span class="curso-nome">Curso de Figma Básico ao Avançado</span>
+              <span class="curso-obs">Aprenda a criar interface de <br>
+                sites e com Figma 
+                </span>
+                <span class="preco">R$ 25,00</span>
+                <a href="TelaCompra.html"><button class="curso-btm">Comprar</button></a>
+                
+            </div>
+        </section>
+
+        <section class="cards_cursos">
+          <h3 class="titulo_cursos">Para você</h3>
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+          
+                  <div class="swiper-slide card">
+                    <div class="card-conteudo">
+
+                      <img src="assets/img/PS.png" alt="img figma">
+                      
+                      <div class="curso-txt">
+                        <span class="curso-nome">Curso de Figma Básico ao Avançado</span>
+                        <span class="curso-obs">Aprenda a criar interface de <br>
+                          sites e com Figma 
+                          </span>
+                          <span class="preco">R$ 25,00</span>
+                          <button class="curso-btm">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-conteudo">
+
+                      <img src="assets/img/VUE.png" alt="img figma">
+                      
+                      <div class="curso-txt">
+                        <span class="curso-nome">Curso de Figma Básico ao Avançado</span>
+                        <span class="curso-obs">Aprenda a criar interface de <br>
+                          sites e com Figma 
+                          </span>
+                          <span class="preco">R$ 25,00</span>
+                          <button class="curso-btm">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-conteudo">
+
+                      <img src="assets/img/AE.png" alt="img figma">
+                      
+                      <div class="curso-txt">
+                        <span class="curso-nome">Curso de Figma Básico ao Avançado</span>
+                        <span class="curso-obs">Aprenda a criar interface de <br>
+                          sites e com Figma 
+                          </span>
+                          <span class="preco">R$ 25,00</span>
+                          <button class="curso-btm">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-conteudo">
+
+                      <img src="assets/img/FIG.png" alt="img figma">
+                      
+                      <div class="curso-txt">
+                        <span class="curso-nome">Curso de Figma Básico ao Avançado</span>
+                        <span class="curso-obs">Aprenda a criar interface de <br>
+                          sites e com Figma 
+                          </span>
+                          <span class="preco">R$ 25,00</span>
+                          <button class="curso-btm">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide card">
+                    <div class="card-conteudo">
+
+                      <img src="assets/img/PY.png" alt="img figma">
+                      
+                      <div class="curso-txt">
+                        <span class="curso-nome">Curso de Figma Básico ao Avançado</span>
+                        <span class="curso-obs">Aprenda a criar interface de <br>
+                          sites e com Figma 
+                          </span>
+                          <span class="preco">R$ 25,00</span>
+                          <button class="curso-btm">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-conteudo">
+
+                      <img src="assets/img/FRONT.png" alt="img figma">
+                      
+                      <div class="curso-txt">
+                        <span class="curso-nome">Curso de Figma Básico ao Avançado</span>
+                        <span class="curso-obs">Aprenda a criar interface de <br>
+                          sites e com Figma 
+                          </span>
+                          <span class="preco">R$ 25,00</span>
+                          <button class="curso-btm">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+          
+              <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+        </section>
+       
+        <!-- FIM ESPAÇO CARDS CURSOS -->
+
+        <!-- SECTIONS DASH E TUTO -->
+        <section class="dash">
+            <div class="conteudo_dash">
+                <img src="assets/icons/rocket.svg" alt="icone foguete">
+                <p>10k</p>
+                <span>Alunos Satisfeitos</span>
+            </div>
+
+            <div class="conteudo_dash">
+                <img src="assets/icons/user.svg" alt="icone foguete">
+                <p>+900</p>
+                <span>Vídeo-aulas</span>
+            </div>
+
+            <div class="conteudo_dash">
+                <img src="assets/icons/laptop.svg" alt="icone foguete">
+                <p>+1000</p>
+                <span>Cursos</span>
+            </div>
+
+            <button class="btm_dash">
+                Comece a comprar
+            </button>
+        </section>
+
+        <section class="dash_mobile">
+          <div class="conteudo_dash-mobile">
+            <img src="assets/icons/rocket.svg" alt="icone foguete">
+            <p>10k</p>
+            <span>Alunos Satisfeitos</span>
+        </div>
+
+        <div class="conteudo_dash-mobile">
+            <img src="assets/icons/user.svg" alt="icone foguete">
+            <p>+900</p>
+            <span>Vídeo-aulas</span>
+        </div>
+
+        <div class="conteudo_dash-mobile">
+            <img src="assets/icons/laptop.svg" alt="icone foguete">
+            <p>+1000</p>
+            <span>Cursos</span>
+        </div>
+
+        <button class="btm_dash-mobile">
+            Comece a comprar
+        </button>
+        </section>
+
+        <section class="tutorial">
+            <div class="txt">
+                <h2 class="titulo_txt">Tutoria online</h2>
+                <p>Aqui você conta o Fórum de Tutoria para melhorar a sua experiência de ensino, traçando alvos estratégicos necessários para o aperfeiçoamento de suas habilidades e melhorando a qualidade do aprendizado de forma personalizada.
+                    O objetivo da tutoria é te ajudar a alcançar o sucesso nos estudos através de um acompanhamento sistemático.
+                    </p>
+            </div>
+
+            <div class="tuto_img">
+                <img src="assets/img/Group 40.png" alt="img tuto">
+            </div>
+        </section>
+
+        </main>
+        <!-- FIM SECTIONS DASH E TUTO -->
+
+        <footer class="footer">
+          <p>Contato</p>
+          <span>progressacademy@email.com</span>
+          <div class="redes_footer">
+            <a href="#"><img src="assets/icons/insta.svg" alt="logo insta"></a>
+            <a href="#"><img src="assets/icons/face.svg" alt="logo face"></a>
+            <a href="#"><img src="assets/icons/youtube.svg" alt="logo youtube"></a>
+          </div>
+          <span class="copy">&copy; Progress Academy todos os direitos reservados </span>
+        </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
+  $(document).ready(function () {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+
+/* Menu Lateral */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<script src="assets/js/myscript.js"></script>
+  </body>
+</html>
